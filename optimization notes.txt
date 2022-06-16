@@ -1,0 +1,32 @@
+Baseline:
+	Played 5000 games, 25057 ms elapsed (5011 us per game)
+
+Optimize letter frequency counting:
+	Played 5000 games, 19674 ms elapsed (3934 us per game)
+
+Optimize scoring of potential guesses (use letters instead of iterating alphabet)
+	Played 5000 games, 3224 ms elapsed (644 us per game)
+
+Calculate first guess once for all rounds
+	Played 5000 games, 2186 ms elapsed (437 us per game)
+
+Optimize yellow_filter()
+	Played 5000 games, 1962 ms elapsed (392 us per game)
+	
+Optimize letter_weights lookup in select_guess()
+	Played 5000 games, 1947 ms elapsed (389 us per game)
+	
+Optimize scoring of potential guesses (use bool lookup for faster duplicate letter detection)
+	Played 5000 games, 1831 ms elapsed (366 us per game)
+	
+Optimize scoring of potential guesses (use smaller bool lookup)
+	Played 5000 games, 1556 ms elapsed (311 us per game)
+	
+Optimize yellow_filter (use one remove_if instead of two)
+	Played 5000 games, 1521 ms elapsed (304 us per game)
+
+Regression: switch to C++17
+	Played 5000 games, 1604 ms elapsed (320 us per game)
+
+Replaced std::string with boost::static_string
+	Played 5000 games, 995 ms elapsed (199 us per game)
