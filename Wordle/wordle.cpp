@@ -9,8 +9,8 @@ int main()
 	// test();
 
 	Solver solver{
-		load_wordlist("word_master_answers.txt"),
-		load_wordlist("word_master_words.txt") };
+		load_wordlist("wordle_nyt.txt"),
+		load_wordlist("wordle_nyt.txt") };
 
 	solver.run();
 }
