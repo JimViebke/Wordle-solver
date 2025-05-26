@@ -1,9 +1,9 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <SFML/Graphics/Text.hpp>
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/Text.hpp>
 
 #include <sstream>
 
@@ -80,7 +80,7 @@ public:
 		window = std::make_unique<sf::RenderWindow>(
 			sf::VideoMode((uint32_t)detail::window_width, (uint32_t)detail::window_height),
 			"Wordle Solver",
-			sf::Style::Titlebar,
+			sf::Style::Titlebar | sf::Style::Close,
 			settings);
 
 		window->setFramerateLimit(60);

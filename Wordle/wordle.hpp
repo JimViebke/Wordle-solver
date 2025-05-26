@@ -1,11 +1,11 @@
 #pragma once
 
-#include <iostream>
+#include <algorithm>
 #include <fstream>
+#include <iostream>
+#include <map>
 #include <string>
 #include <vector>
-#include <algorithm>
-#include <map>
 
 #include "boost_static_string.hpp"
 

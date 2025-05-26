@@ -1,6 +1,6 @@
 
-#include "wordle.hpp"
 #include "solver.hpp"
+#include "wordle.hpp"
 
 int main()
 {
