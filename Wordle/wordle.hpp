@@ -76,7 +76,7 @@ std::vector<string_t> load_wordle_nyt_words()
 {
 	assert(detail::word_length == 5);
 
-	std::fstream word_file("../Wordle/wordle_nyt.txt");
+	std::fstream word_file("../../../../Documents/word lists/wordle_nyt.txt");
 
 	std::string word;
 	std::vector<string_t> word_list;
@@ -94,7 +94,7 @@ std::vector<string_t> load_wordlist(const std::string& filename)
 {
 	assert(detail::word_length == 5);
 
-	std::fstream word_file("../Wordle/" + filename);
+	std::fstream word_file("../../../../Documents/word lists/" + filename);
 
 	std::string word;
 	std::vector<string_t> word_list;
